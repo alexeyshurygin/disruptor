@@ -65,7 +65,7 @@ import static com.lmax.disruptor.support.PerfTestUtil.failIfNot;
 public final class OneToOneSequencedThroughputTest extends AbstractPerfTestDisruptor
 {
     private static final int BUFFER_SIZE = 1024 * 64;
-    private static final long ITERATIONS = 1000L * 1000L * 100L;
+    private static final long ITERATIONS = 100_000_000L;
     private final ExecutorService executor = Executors.newSingleThreadExecutor(DaemonThreadFactory.INSTANCE);
     private final long expectedResult = PerfTestUtil.accumulatedAddition(ITERATIONS);
 

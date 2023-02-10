@@ -73,7 +73,7 @@ public final class ThreeToOneQueueThroughputTest extends AbstractPerfTestQueue
 {
     private static final int NUM_PUBLISHERS = 3;
     private static final int BUFFER_SIZE = 1024 * 64;
-    private static final long ITERATIONS = 1000L * 1000L * 20L;
+    private static final long ITERATIONS = 20_000_000L;
     private final ExecutorService executor = Executors.newFixedThreadPool(NUM_PUBLISHERS + 1, DaemonThreadFactory.INSTANCE);
     private final CyclicBarrier cyclicBarrier = new CyclicBarrier(NUM_PUBLISHERS + 1);
 

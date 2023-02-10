@@ -62,7 +62,7 @@ public final class OneToThreePipelineQueueThroughputTest extends AbstractPerfTes
 {
     private static final int NUM_EVENT_PROCESSORS = 3;
     private static final int BUFFER_SIZE = 1024 * 8;
-    private static final long ITERATIONS = 1000L * 1000L * 10L;
+    private static final long ITERATIONS = 10_000_000L;
     private final ExecutorService executor = Executors.newFixedThreadPool(NUM_EVENT_PROCESSORS, DaemonThreadFactory.INSTANCE);
 
     private static final long OPERAND_TWO_INITIAL_VALUE = 777L;

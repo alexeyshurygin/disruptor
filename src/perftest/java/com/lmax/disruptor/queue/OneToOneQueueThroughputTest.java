@@ -53,7 +53,7 @@ import static com.lmax.disruptor.support.PerfTestUtil.failIf;
 public final class OneToOneQueueThroughputTest extends AbstractPerfTestQueue
 {
     private static final int BUFFER_SIZE = 1024 * 64;
-    private static final long ITERATIONS = 1000L * 1000L * 10L;
+    private static final long ITERATIONS = 10_000_000L;
     private final ExecutorService executor = Executors.newSingleThreadExecutor(DaemonThreadFactory.INSTANCE);
     private final long expectedResult = ITERATIONS * 3L;
 

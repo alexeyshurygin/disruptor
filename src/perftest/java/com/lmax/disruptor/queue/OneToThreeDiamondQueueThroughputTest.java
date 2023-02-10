@@ -100,7 +100,7 @@ public final class OneToThreeDiamondQueueThroughputTest extends AbstractPerfTest
 {
     private static final int NUM_EVENT_PROCESSORS = 3;
     private static final int BUFFER_SIZE = 1024 * 8;
-    private static final long ITERATIONS = 1000L * 1000L * 100L;
+    private static final long ITERATIONS = 100_000_000L;
     private final ExecutorService executor = Executors.newFixedThreadPool(NUM_EVENT_PROCESSORS, DaemonThreadFactory.INSTANCE);
 
     private final long expectedResult;

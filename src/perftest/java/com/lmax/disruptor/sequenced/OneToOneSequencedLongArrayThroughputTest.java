@@ -64,7 +64,7 @@ import static com.lmax.disruptor.RingBuffer.createSingleProducer;
 public final class OneToOneSequencedLongArrayThroughputTest extends AbstractPerfTestDisruptor
 {
     private static final int BUFFER_SIZE = 1024 * 1;
-    private static final long ITERATIONS = 1000L * 1000L * 1L;
+    private static final long ITERATIONS = 1_000_000L;
     private static final int ARRAY_SIZE = 2 * 1024;
     private final ExecutorService executor = Executors.newSingleThreadExecutor(DaemonThreadFactory.INSTANCE);
 
